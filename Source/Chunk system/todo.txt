@@ -1,0 +1,6 @@
+get_load_positions_circle()
+Интерфейс для редактирования чанков
+Ограничение движения вне прогруженных чанков
+chunk property: centered
+XYZ mode
+chunk component 3d

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://2iv83wtj0g4q"]
+
+[ext_resource type="PackedScene" uid="uid://x5j38lwk04ij" path="res://scenes/chunk_manager_2d.tscn" id="1_jj5rd"]
+[ext_resource type="PackedScene" uid="uid://bwy2j6k4jtkvi" path="res://assets/2d/top_down_controller/player.tscn" id="2_tse2k"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ChunkManager2D" parent="." instance=ExtResource("1_jj5rd")]
+world = "res://scenes/world_2d"
+
+[node name="Player" parent="." instance=ExtResource("2_tse2k")]
+position = Vector2(203, 123)
+move_speed = 80.0
+
+[node name="Camera2D" parent="Player" index="2"]
+zoom = Vector2(0.1, 0.1)
+
+[editable path="Player"]

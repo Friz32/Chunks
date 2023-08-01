@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl4iyas75usqf"]
+
+[ext_resource type="Script" path="res://assets/2d/visual_shapes/rect.gd" id="1_nqk2a"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="VisualShapeRect" type="Node2D" parent="."]
+position = Vector2(1024, 1024)
+script = ExtResource("1_nqk2a")
+size = Vector2(2048, 2048)
+color = Color(0.580392, 0.588235, 0.415686, 1)

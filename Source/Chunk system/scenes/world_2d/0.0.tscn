@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://7khcqo4a5031"]
+
+[ext_resource type="Script" path="res://assets/2d/visual_shapes/rect.gd" id="1_0hlkm"]
+[ext_resource type="PackedScene" uid="uid://d0sbmv68qvd75" path="res://scenes/chunk_component_2d.tscn" id="2_nb4yo"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ChunkComponent" parent="." instance=ExtResource("2_nb4yo")]
+preview_neighboring_chunks = true
+
+[node name="VisualShapeRect" type="Node2D" parent="."]
+position = Vector2(1024, 1024)
+script = ExtResource("1_0hlkm")
+size = Vector2(2048, 2048)
+color = Color(0.643137, 0.52549, 0.670588, 1)
